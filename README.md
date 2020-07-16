@@ -10,8 +10,7 @@ The View component handles the user interface (UI) of the application. It presen
 
 The Controller component acts as the connector between the model and the view. The controller handles the decision making aspect of an application. After the router has determined which controller to use for a request, it is the job of the controller to understand the request and provide an appropriate response. A common example would be if a user requests a particular data, the controller would advise the model to fetch the data. Once completed, the controller would then make this data accessible to the view, which is then presented in a certain way. In Rails, the controller is also referred to as Action Controller.
 
-![MVC Illustration](mvc.png)
-[Image Source](https://www.sitepoint.com/model-view-controller-mvc-architecture-rails/)
+![MVC Illustration](mvc.jpg)
 
 ##### Resources
 
@@ -19,6 +18,7 @@ The Controller component acts as the connector between the model and the view. T
 -   [Source 2](https://guides.rubyonrails.org/active_record_basics.html)
 -   [Source 3](https://guides.rubyonrails.org/layouts_and_rendering.html)
 -   [Source 4](https://guides.rubyonrails.org/action_controller_overview.html)
+-   [Image Source](https://www.youtube.com/watch?v=3mQjtk2YDkM)
 
 ## Q2 Identify a database commonly used in web applications (including Rails) and discuss the pros and cons of this database.
 
@@ -223,6 +223,8 @@ Sorting algorithms, as the name suggests, are algorithms used to rearrange a giv
 
 Quicksort algorithm or also known as partition-exchange sort, is an algorithm that follows a divide-and-conquer analogy. It is implemented by selecting a ‘pivot’ element from the array and partitioning the other elements into two sub-arrays having all the elements less than the ‘pivot’ element to its left and greater than elements to its right all the while finding the correct index for the ‘pivot’ element. There are many ways to partition elements into two sub-arrays. One way is to set two variable counters.
 
+### Quick Sort
+
 Given an unsorted array, we assign the ‘pivot’ element as the last value. Pivot element can either be the first, the last, the median or a random element but by convention, it should be the last element. We then set two variable counters ‘i’ and ‘j’. The variable ‘i’ would have the index of the first element less than 1 and the ‘j’ variable is initially the index of the first element of the array. The value of the element in index ‘j’ would be compared to the ‘pivot’ element. If the value of the element in index ‘j’ is greater than the ‘pivot’ element, we increment ‘j’ to move on to the next element of the array, otherwise, increment ‘i’ and then swap the values of the elements in ‘i’ and ‘j’ indices then increment ‘j’ to move on to the next element. Repeat the process until we reach the element before the ‘pivot’ element. After the last comparison, we then move the ‘pivot’ to its rightful index by incrementing ‘i’ one more time before swapping the values of index i with the pivot. This action would partition the array into two sub-arrays. The left side of the pivot element would all be less than the pivot element and the greater than on the right side. Apply the same process on the sub-arrays recursively and we would eventually end up with a sorted array.
 
 ![Quick Sort Illustration](quicksort.png)
@@ -230,6 +232,8 @@ Given an unsorted array, we assign the ‘pivot’ element as the last value. Pi
 The time taken by QuickSort depends on the number of inputs. On average, the time it takes is O(log n). In a worst case scenario, this algorithm would take O(n^2) time when the smallest or the greatest element is picked as the pivot element, which usually occurs when the array is already sorted in increasing or decreasing order. On the other hand, its best day is when the partition process picks the middle element as pivot recursively thus resulting in O(log n) time. Overall, its average timing is what makes it one of the fastest sorting algorithms today.
 
 In selection sort, the main idea of the algorithm is to maintain two subarrays in a given array, one sorted and one unsorted then finds the smallest unsorted element and adds it to the end of the sorted array.
+
+### Selection Sort
 
 Initially, all the elements in the array would be the unsorted part of the array. The algorithm would search for the smallest value in the unsorted array. Once found, it would then swap the value with the first element of the unsorted part of the array, making it the first element and thus becoming the sorted part of the array while also reducing the number of the unsorted part of the array. After that, the algorithm would then again look for the smallest value in the unsorted part of the array and once found, it would again swap positions with the first element of the unsorted part of the array, essentially putting it at the end of the sorted array. This process is repeated until no element is left at the unsorted part of the array.
 
@@ -247,12 +251,15 @@ When comparing algorithms according to their time complexity, Big O notations se
     -   [Source 2](https://www.youtube.com/watch?v=MZaf_9IZCrc)
 -   **Selection Sort**
     -   [Source](https://www.geeksforgeeks.org/selection-sort/)
+    -   [Image Source](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hackerearth.com%2Fpractice%2Falgorithms%2Fsorting%2Fselection-sort%2Ftutorial%2F&psig=AOvVaw2QIxv_-hgI32XBFV9C2DBY&ust=1594993460764000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPjzjOfz0eoCFQAAAAAdAAAAABAD)
 
 ## Q13 Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O)
 
 Searching algorithms, as the name suggests, are algorithms that find or retrieve an element from any data structure. There are more than 10 search algorithms available for use, with distinct speed and memory usage compared to another. According to its search operation, they are generally classified into two categories. Sequential Search and Interval Search. The former being every element in the list or array is being checked sequentially against the value being searched. A great example of this category is the Linear Search. The latter, on the other hand, are designed for searching in a sorted data structure. They are generally more efficient compared to sequential searching as they target the center of the search structure and divide the scope of the search in half recursively. Binary Search is the perfect example of this category.
 
 Linear search is a method for finding an element within a list by sequentially checking each element of the list or array until a match is found or when the whole list or array has been searched. The idea of this algorithm is to iterate across the array from left to right, searching for a specified element.
+
+### Linear Search
 
 Given an element x, finding x using the linear search starts off from the leftmost element of an array or list, which is usually at index 0. One by one, each element of the array or list is compared to x. If an element matches with x, the index of that element is returned. If each element in the array or list has been checked and compared and no match was found, return -1.
 
@@ -261,6 +268,8 @@ Given an element x, finding x using the linear search starts off from the leftmo
 The steps are pretty simple enough yet practically, linear search is rarely used because of its slow speed. Since it has to do the checks with every element, if a large array was given and the value is at the end of the array, this would consume a huge amount of time. Also, if the value is not in the array, the checks on every element would still be done until the end of the array thus also resulting in consuming a huge amount of time. Generally, as the size of the array or list increases, the amount of time it would take to accomplish its task would be greatly affected thus resulting in a linear time complexity or O(n).
 
 On the other hand, Binary search is a method for finding an element in a sorted list or array by divide and conquer analogy. Dividing the list or array would reduce the search area by half each time, trying to find a target number. This algorithm is faster than linear search but heavily relies on the list or array being sorted, otherwise assumptions that the value is not on the other half of the array’s contents cannot be made. With constant dividing and reducing, if the value is not present in the sorted list or array, this would result in the size of the array being 0.
+
+### Binary Search
 
 Given a sorted array, finding x in the array using the binary search would start by calculating the middle point of the current array. If the middle value is x, return. If x is less than the value of the middle point, repeat the process on the left side of the middle point and discard the rest thus creating a sub array. However, if x is greater than the value of the middle point, repeat the process on the right side of the middle point and discard the rest to create a sub array. Repeat the process of sub creating arrays and discarding the rest until the size of the sub array is 0, which essentially means x is not in the array, or when x becomes the middle value.
 
@@ -407,8 +416,8 @@ The listed entities above is an overview and assumption of how the web applicati
 
 The table below is the assumed relationsips and associations between the entities based on research, author's understanding and available resources.
 | User | Message | Listing | Category | Sub Category | Location | State | Region | Area | Suburb |
-| ----------------- | --------------- | ----------------------- | ------------------------------- | ------------------- | --------------- | ---------------- | ---------------- | ----------------- | ---------------------------------- |
-| has many messages | belongs to user | belongs to user | has many sub categories | belongs to category | no associations | has many regions | belongs to state | belongs to region | belongs to area |
+|------|---------|---------|----------|--------------|----------|-------|--------|------|--------|
+| has many messages | belongs to user | belongs to user | has many sub categories | belongs to category || has many regions | belongs to state | belongs to region | belongs to area |
 | has many listings | | belongs to sub category | has and belongs to many suburbs | has many listings | | | has many areas | has many suburbs | has and belongs to many categories |
 | belongs to suburb | | belongs to suburb | | | | | | | has many listings |
 | | | | | | | | | | has many users |
