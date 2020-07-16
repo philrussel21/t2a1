@@ -1,3 +1,30 @@
+**Author:** [Phil Antiporda](https://github.com/philrussel21)
+[Link to Repo](https://github.com/philrussel21/t2a1)
+
+# Table of Contents
+
+1. [Rails Architecture](https://github.com/philrussel21/t2a1#q1-describe-the-architecture-of-a-typical-rails-application)
+1. [PostgreSQL](https://github.com/philrussel21/t2a1#q2-identify-a-database-commonly-used-in-web-applications-including-rails-and-discuss-the-pros-and-cons-of-this-database)
+1. [Agile Project Management](https://github.com/philrussel21/t2a1#q3-discuss-the-implementation-of-agile-project-management-methodology)
+1. [Source Control Workflow - Forking Workflow](https://github.com/philrussel21/t2a1#q4-provide-an-overview-and-description-of-a-standard-source-control-workflow)
+1. [Software Testing Process](https://github.com/philrussel21/t2a1#q4-provide-an-overview-and-description-of-a-standard-software-testing-process)
+1. [System Security](https://github.com/philrussel21/t2a1#q6-discuss-and-analyse-requirements-related-to-information-system-security-and-how-they-relate-to-the-project)
+1. [Data Integrity](https://github.com/philrussel21/t2a1#q7-discuss-common-methods-of-protecting-information-and-data-and-how-you-would-apply-them-to-the-project)
+1. [Legal Obligations](https://github.com/philrussel21/t2a1#q8-research-what-your-legal-obligations-are-in-relation-to-handling-user-data-and-how-they-can-be-met-for-the-project)
+1. [Relational Database - Structural](https://github.com/philrussel21/t2a1#q9-describe-the-structural-aspects-of-the-relational-database-model-your-description-should-include-information-about-the-structure-in-which-data-is-stored-and-how-relations-are-represented-in-that-structure)
+1. [Relational Database - Integrity](https://github.com/philrussel21/t2a1#q10-describe-the-integrity-aspects-of-the-relational-database-model-your-description-should-include-information-about-the-types-of-data-integrity-and-how-they-can-be-enforced-in-a-relational-database)
+1. [Relational Database - Manipulation](https://github.com/philrussel21/t2a1#q11-describe-the-manipulative-aspects-of-the-relational-database-model-your-description-should-include-information-about-the-ways-in-which-data-is-manipulated-added-removed-changed-and-retrieved-in-a-relational-database)
+1. [Sorting Algorithms - Quick & Selection Sort](https://github.com/philrussel21/t2a1#q12-identify-and-explain-the-workings-of-two-sorting-algorithms-and-discuss-and-compare-their-performanceefficiency-ie-big-o)
+1. [Searching Algorithms - Linear and Binary Search](https://github.com/philrussel21/t2a1#q13-identify-and-explain-the-workings-of-two-search-algorithms-and-discuss-and-compare-their-performanceefficiency-ie-big-o)
+1. [Marketplace App - Gumtree](https://github.com/philrussel21/t2a1#q14-conduct-research-into-a-marketplace-website-app-and-answer-the-following-parts)
+    - [Software used](https://github.com/philrussel21/t2a1#a-list-and-describe-the-software-used-by-the-app)
+    - [Hosting hardware](https://github.com/philrussel21/t2a1#b-describe-the-hardware-used-to-host-the-app)
+    - [Tech Interactions](https://github.com/philrussel21/t2a1#c-describe-the-interaction-of-technologies-within-the-app)
+    - [Data Structure](https://github.com/philrussel21/t2a1#d-describe-the-way-data-is-structured-within-the-app)
+    - [Tracked Entities](https://github.com/philrussel21/t2a1#e-identify-entities-which-must-be-tracked-by-the-app)
+    - [Relationships and Associations](https://github.com/philrussel21/t2a1#f-identify-the-relationships-and-associations-between-the-entities-you-have-identified-in-part-e)
+    - [ERD schema](https://github.com/philrussel21/t2a1#g-design-a-schema-using-an-entity-relationship-diagram-erd-appropriate-for-the-database-of-this-website-assuming-a-relational-database-model)
+
 # T2A1 - Workbook Term 2
 
 ## Q1 Describe the architecture of a typical Rails application.
@@ -83,7 +110,7 @@ Git is a free and open-source distributed source control system that embodies al
 -   [Source 1](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow)
 -   [Source 2](https://aws.amazon.com/devops/source-control/)
 
-## Q5
+## Q5 Provide an overview and description of a standard software testing process
 
 Testing is a series of actions to assess a system, a software, or its components with the aim to figure out if it passes specific requirements or not. It is done to locate any errors, gaps, or missing components in contrast to the actual requirements. Testing intends to find these errors in the testing stage and tries to fix these gaps to arrive at a product free of bugs. As the saying goes, “Software is never finished” so does testing. Adding new features to the product also means another stage of testing which are both necessary to count as an improvement.
 
