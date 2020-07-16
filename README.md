@@ -10,6 +10,9 @@ The View component handles the user interface (UI) of the application. It presen
 
 The Controller component acts as the connector between the model and the view. The controller handles the decision making aspect of an application. After the router has determined which controller to use for a request, it is the job of the controller to understand the request and provide an appropriate response. A common example would be if a user requests a particular data, the controller would advise the model to fetch the data. Once completed, the controller would then make this data accessible to the view, which is then presented in a certain way. In Rails, the controller is also referred to as Action Controller.
 
+![MVC Illustration](mvc.png)
+[Image Source](https://www.sitepoint.com/model-view-controller-mvc-architecture-rails/)
+
 ##### Resources
 
 -   [Source 1](https://www.techcareerbooster.com/blog/ruby-on-rails-architecture-overview-for-beginners)
@@ -34,9 +37,22 @@ Unfortunately, postgres also has its own drawbacks. Being a relational database,
 
 Agile project management is a constant and repetitive approach to managing software development projects that targets consecutive releases and integrating customer feedback with every iteration. Embracing agile project management methodologies will guarantee software teams to increase their development efficiency, improve and expand team collaboration, and flexibility to adapt and respond to industry market trends. Agile project management is usually broken down into two categories: the Scrum framework and the Kanban framework.
 
-The scrum framework is an implementation of agile project management that uses predetermined iterations of work called sprints. These sprints consist of planning, building, testing, reviewing then arriving with a potentially shippable product within a timeframe. Each scrum has four ceremonies that bring structure to sprint. Sprint Planning, Sprint Demo, Daily Standup and Retrospective. Sprint planning is to determine the goal in the coming sprint. Sprint demo is a sharing meeting to demo what they’ve completed in that sprint. Daily stand up is a mini meeting everyday to discuss status and roadblocks among the team. Retrospective is a review or reflection of actions to improve the next sprint.
+The scrum framework is an implementation of agile project management that uses predetermined iterations of work called sprints. These sprints consist of planning, building, testing, reviewing then arriving with a potentially shippable product within a timeframe. Each scrum has four ceremonies that bring structure to sprint, namely:
 
-There are also 3 roles in the scrum. The product owner, scrum master, and the scrum teams. The product owner is responsible for defining the features of a needed product. The scrum team consists of developers, writers, testers and anyone else that helps to build the product. The scrum master is the servant-leader for the scrum team that is responsible for promoting and supporting scrum by helping everyone understand scrum theories, practices, rules and values.
+-   **Sprint Planning**
+    -   Sprint planning is to determine the goal in the coming sprint.
+-   **Sprint Demo**
+    -   Sprint demo is a sharing meeting to demo what they’ve completed in that sprint.
+-   **Daily Standup**
+    -   Daily stand up is a mini meeting everyday to discuss status and roadblocks among the team.
+-   **Retrospective**
+    -   Retrospective is a review or reflection of actions to improve the next sprint.
+
+There are also 3 roles in the scrum. The **product owner**, **scrum master**, and the **scrum team**.
+
+-   The product owner is responsible for defining the features of a needed product.
+-   The scrum team consists of developers, writers, testers and anyone else that helps to build the product, and
+-   The scrum master is the servant-leader for the scrum team that is responsible for promoting and supporting scrum by helping everyone understand scrum theories, practices, rules and values.
 
 Scrum starts with the backlog, or body of work that needs to be done. Backlogs are also categorized into two: product backlog and the sprint backlog. Product backlog is owned by the product owner in which they create a prioritized list of features known as user stories that could go into the product. User stories are a way to describe a feature set that follows the “As a user, I need something, so that reason.” format. This format gives the team the right amount of time it would need to complete the task. These user stories are then put into the sprint backlog until the capacity is reached.
 
@@ -48,12 +64,12 @@ Kanban on the other hand, has no backlogs. Instead, it has a To Do column. Kanba
 
 Source control, or commonly referred to as version control, is the process of tracking and managing the history and changes of the code. It also allows you to go back in time to view your source code at various points of a codebase’s history. Source control systems also make collaborations between teams of developers a lot easier by allowing them to work simultaneously on the same source file and the ability to resolve code conflicts.
 
-Git is a free and open-source distributed source control system that embodies all these characteristics. With its power and flexibility, it is only reasonable to follow recommendations on how to accomplish work in an effective and efficient manner, hence Git Workflows. The Forking Workflow is one of the many of Git workflows and is common to open-source projects.
+Git is a free and open-source distributed source control system that embodies all these characteristics. With its power and flexibility, it is only reasonable to follow recommendations on how to accomplish work in an effective and efficient manner, hence Git Workflows. The Forking Workflow is one of the many Git workflows and is common to open-source projects.
 
 ### Overview of Forking Workflow
 
 1. The project maintainer creates a public repository stored on a server.
-1. New developers stumbled upon this project and were interested in contributing to this project. Instead of directly cloning the project directly to their local machine, they fork the official repository to create a copy of it on the server, under their account.
+1. New developers stumble upon this project and were interested in contributing to this project. Instead of directly cloning the project directly to their local machine, they fork the official repository to create a copy of it on the server, under their account.
 1. Once the project is forked, they then clone a copy of it to their local machine, from their account.
 1. In addition to their repository (conventionally called origin), a remote path for the open-sourced project (conventionally called upstream) is added to the local clone.
 1. Create a new branch for the desired or assigned feature changes to be made.
@@ -74,15 +90,15 @@ Testing is a series of actions to assess a system, a software, or its components
 Software testing processes vary from company to company and from person to person but overall, they all share these basic principles.
 
 1. **Planning**
-   The scope of the test is discussed and the risks associated are evaluated including the range and duration of the testing.
+    - The scope of the test is discussed and the risks associated are evaluated including the range and duration of the testing.
 1. **Creation of Scenarios**
-   The stage where the “expected” outputs are laid out in accordance to the nature of the project to be tested. This stage should consider both distinct and plain outputs.
+    - The stage where the “expected” outputs are laid out in accordance to the nature of the project to be tested. This stage should consider both distinct and plain outputs.
 1. **Preparation of Test Environment and Data Creation**
-   This stage is the last step before the actual tests. Importing and installing the product to be tested in the test environment, setting up data required for the test, checking the actual test environment for the best course and all other necessary preparations are made before starting the test.
+    - This stage is the last step before the actual tests. Importing and installing the product to be tested in the test environment, setting up data required for the test, checking the actual test environment for the best course and all other necessary preparations are made before starting the test.
 1. **Running the Scenarios**
-   The stage where the tests are actually run. The test cases and scenarios that have been put in place are applied.
+    - The stage where the tests are actually ran. The test cases and scenarios that have been put in place are applied.
 1. **Results reporting**
-   The stage where the results of the test scenarios are communicated to the appropriate personnel. This can be done by creating a concise report that may include media (photos and/or videos) to highlight errors.
+    - The stage where the results of the test scenarios are communicated to the appropriate personnel. This can be done by creating a concise report that may include media (photos and/or videos) to highlight errors.
 
 #####
 
@@ -115,7 +131,7 @@ With technology evolving at a rapid phase, so does security and its threats, but
 
 ## Q7 Discuss common methods of protecting information and data and how you would apply them to the project.
 
-It is our duty of care to secure the product from malicious attackers from accessing our user data. Fortunately, we have multiple ways of protecting our users from these risks. For starters, the proper use of HTTP protocol would be put in place as a first layer of security and the requirement of security tokens that are only recognized by our app would ensure the flow of information and protect from cross-site request forgery (CSRF) attack, among other things.
+It is our duty of care to secure the product from malicious attackers from accessing our user data. Fortunately, we have multiple ways of protecting our users from these risks. For starters, the proper use of HTTP protocol would be put in place as a first layer of security and the requirement of security tokens that are only recognized by our app would ensure the secure flow of information and protect from cross-site request forgery (CSRF) attack, among other things.
 
 Authentication of users by setting up sign in and sign up features allows appropriate personnel the right amount of access. User passwords for this account sign ins should also be encrypted to increase security and to repel malicious eyes as an extra measure.
 Two-factor authentication would also be put in place with a trusted third party email application to improve security. Users are to be asked to sign in to validate credentials before finalizing a purchase, as well as putting a product on the market. This would secure the sensitive information that is to be filled in a form (e.g. checkout form).
@@ -181,18 +197,18 @@ Querying is the process of requesting data or information from a database table.
 -   `DELETE FROM table_name;`
 -   `WHERE column = value;`
 
-    -   The syntax above is followed to remove a record from the database. The WHERE keyword is the condition you want to match to find the right record, represented by a column and its value. If you wish to delete all the records from the table, you can omit the WHERE keyword and this would clear the table.
+    -   The syntax above is followed to remove a record from the database. The `WHERE` keyword is followed by the condition you want to match to find the right record, represented by a column and its value. If you wish to delete all the records from the table, you can omit the `WHERE` keyword and this would clear the table.
 
 -   `UPDATE table_name;`
 -   `SET column = value;`
 -   `WHERE column = value;`
 
-    -   The statements above are used to modify and update the existing data in the table. It would look for the record with matching condition next to the WHERE keyword inside the table_name. Once found, it will update its column values with the values passed next to the SET keyword. Omitting the WHERE keyword would affect all the rows instead of a particular record.
+    -   The statements above are used to modify and update the existing data in the table. It would look for the record with matching condition next to the `WHERE` keyword inside the `table_name`. Once found, it will update its column values with the values passed next to the `SET` keyword. Omitting the `WHERE` keyword would affect all the rows instead of a particular record.
 
 -   `SELECT column1, column2, columnN;`
 -   `FROM table_name;`
 -   `WHERE column = value;`
-    -   SELECT statement is used to retrieve all the column data from the table next to the FROM keyword. It’s specificity is increased with the use of the WHERE keyword when a column value is passed. This combination would yield a particular data. Alternatively, if you wish to retrieve all data from all the fields available, the syntax SELECT \* FROM table_name; can be used.
+    -   `SELECT` statement is used to retrieve all the column data from the table next to the `FROM` keyword. It’s specificity is increased with the use of the `WHERE` keyword when a column value is passed. This combination would yield a particular data. Alternatively, if you wish to retrieve all data from all the fields available, the syntax `SELECT * FROM table_name;` can be used.
 
 ##### Resources
 
@@ -209,23 +225,28 @@ Quicksort algorithm or also known as partition-exchange sort, is an algorithm th
 
 Given an unsorted array, we assign the ‘pivot’ element as the last value. Pivot element can either be the first, the last, the median or a random element but by convention, it should be the last element. We then set two variable counters ‘i’ and ‘j’. The variable ‘i’ would have the index of the first element less than 1 and the ‘j’ variable is initially the index of the first element of the array. The value of the element in index ‘j’ would be compared to the ‘pivot’ element. If the value of the element in index ‘j’ is greater than the ‘pivot’ element, we increment ‘j’ to move on to the next element of the array, otherwise, increment ‘i’ and then swap the values of the elements in ‘i’ and ‘j’ indices then increment ‘j’ to move on to the next element. Repeat the process until we reach the element before the ‘pivot’ element. After the last comparison, we then move the ‘pivot’ to its rightful index by incrementing ‘i’ one more time before swapping the values of index i with the pivot. This action would partition the array into two sub-arrays. The left side of the pivot element would all be less than the pivot element and the greater than on the right side. Apply the same process on the sub-arrays recursively and we would eventually end up with a sorted array.
 
+![Quick Sort Illustration](quicksort.png)
+
 The time taken by QuickSort depends on the number of inputs. On average, the time it takes is O(log n). In a worst case scenario, this algorithm would take O(n^2) time when the smallest or the greatest element is picked as the pivot element, which usually occurs when the array is already sorted in increasing or decreasing order. On the other hand, its best day is when the partition process picks the middle element as pivot recursively thus resulting in O(log n) time. Overall, its average timing is what makes it one of the fastest sorting algorithms today.
+
 In selection sort, the main idea of the algorithm is to maintain two subarrays in a given array, one sorted and one unsorted then finds the smallest unsorted element and adds it to the end of the sorted array.
 
-Initially, all the elements in the array would be in the unsorted part of the array. The algorithm would search for the smallest value in the unsorted array. Once found, it would then swap the value with the first element of the unsorted part of the array, making it the first element and thus becoming the sorted part of the array while also reducing the number of the unsorted part of the array. After that, the algorithm would then again look for the smallest value in the unsorted part of the array and once found, it would again swap positions with the first element of the unsorted part of the array, essentially putting it at the end of the sorted array. This process is repeated until no element is left at the unsorted part of the array.
+Initially, all the elements in the array would be the unsorted part of the array. The algorithm would search for the smallest value in the unsorted array. Once found, it would then swap the value with the first element of the unsorted part of the array, making it the first element and thus becoming the sorted part of the array while also reducing the number of the unsorted part of the array. After that, the algorithm would then again look for the smallest value in the unsorted part of the array and once found, it would again swap positions with the first element of the unsorted part of the array, essentially putting it at the end of the sorted array. This process is repeated until no element is left at the unsorted part of the array.
+
+![Selection Sort Illustration](selection.png)
 
 Looking closely, the algorithm consists of two nested loops. The first being looping through every element in the array, swapping if applicable, and the second being looping through every element in the unsorted part of the array, looking for the smallest value. This would mean that the time selection sort takes would be O(n^2) both in its worst and best case scenarios.
 
-When comparing algorithms according to their time complexity, Big O notations serve as the measurement by describing the behaviour of the algorithm when given a particular value or infinity. The more complex the behaviour, the more time it would take. Comparing the two sorting algorithms listed above, we can say that in its best scenario, QuickSort’s O(log n) performs faster than Selection Sort’s O(n^2).
+When comparing algorithms according to their time complexity, Big O notations serve as the measurement by describing the behaviour of the algorithm when given a particular value or to infinity. The more complex the behaviour, the more time it would take. Comparing the two sorting algorithms listed above, we can say that in its best scenario, QuickSort’s O(log n) performs faster than Selection Sort’s O(n^2).
 
 ##### Resources
 
--   [Source 1](https://www.geeksforgeeks.org/sorting-algorithms/)
--   [Source 2](https://www.youtube.com/watch?v=MZaf_9IZCrc)
+-   [Source](https://www.geeksforgeeks.org/sorting-algorithms/)
 -   **Quick Sort**
-    -   [Source](https://www.tutorialspoint.com/sql/sql-update-query.htm)
+    -   [Source 1](https://www.geeksforgeeks.org/quick-sort/)
+    -   [Source 2](https://www.youtube.com/watch?v=MZaf_9IZCrc)
 -   **Selection Sort**
-    -   [Source](https://www.tutorialspoint.com/sql/sql-delete-query.htm)
+    -   [Source](https://www.geeksforgeeks.org/selection-sort/)
 
 ## Q13 Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O)
 
@@ -235,13 +256,17 @@ Linear search is a method for finding an element within a list by sequentially c
 
 Given an element x, finding x using the linear search starts off from the leftmost element of an array or list, which is usually at index 0. One by one, each element of the array or list is compared to x. If an element matches with x, the index of that element is returned. If each element in the array or list has been checked and compared and no match was found, return -1.
 
-The steps are pretty simple enough yet practically, linear search is rarely used because of its speed. Since it has to do the checks with every element, if a large array was given and the value is at the end of the array, this would consume a huge amount of time. Also, if the value is not in the array, the checks on every element would still be done until the end of the array thus also resulting in consuming a huge amount of time. Generally, as the size of the array or list increases, the amount of time it would take to accomplish its task would be greatly affected thus resulting in a time complexity of O(n).
+![Linear Search Illustration](linear.png)
+
+The steps are pretty simple enough yet practically, linear search is rarely used because of its slow speed. Since it has to do the checks with every element, if a large array was given and the value is at the end of the array, this would consume a huge amount of time. Also, if the value is not in the array, the checks on every element would still be done until the end of the array thus also resulting in consuming a huge amount of time. Generally, as the size of the array or list increases, the amount of time it would take to accomplish its task would be greatly affected thus resulting in a linear time complexity or O(n).
 
 On the other hand, Binary search is a method for finding an element in a sorted list or array by divide and conquer analogy. Dividing the list or array would reduce the search area by half each time, trying to find a target number. This algorithm is faster than linear search but heavily relies on the list or array being sorted, otherwise assumptions that the value is not on the other half of the array’s contents cannot be made. With constant dividing and reducing, if the value is not present in the sorted list or array, this would result in the size of the array being 0.
 
 Given a sorted array, finding x in the array using the binary search would start by calculating the middle point of the current array. If the middle value is x, return. If x is less than the value of the middle point, repeat the process on the left side of the middle point and discard the rest thus creating a sub array. However, if x is greater than the value of the middle point, repeat the process on the right side of the middle point and discard the rest to create a sub array. Repeat the process of sub creating arrays and discarding the rest until the size of the sub array is 0, which essentially means x is not in the array, or when x becomes the middle value.
 
-With the nature of binary search’s divide and conquer analogy, this algorithm is considered to be one of the fastest search algorithms to date, granted the given list or array is sorted. Constant reduction of the search area by half brings the time complexity to O(log n) which essentially means it's more efficient and less complex compared to Linear search’s O(n).
+![Binary Search Illustration](binary.png)
+
+With the nature of binary search’s divide and conquer analogy, this algorithm is considered to be one of the fastest search algorithms to date, granted the given list or array is sorted. Constant reduction of the search area by half results to the logarithmic time complexity or O(log n) which essentially means it's more efficient and less complex compared to Linear search’s O(n).
 
 ##### Resources
 
@@ -268,7 +293,7 @@ The software used by the marketplace Gumtree are as follows:
 -   **React**
     -   React is an open-source JavasScript library that is used to make interactive User Interface (UI) easier. [Source](https://reactjs.org/)
 -   **jQuery**
-    -   jQuery is a free, open-source lightweight JavaScript library to simplify HTML DOM tree manipulation, event handling, CSS and their animations, utilities and AJAX. [Source](https://www.w3schools.com/jquery/jquery_intro.asp)
+    -   jQuery is a free, open-source, and lightweight JavaScript library to simplify HTML DOM tree manipulation, event handling, CSS and their animations, utilities and AJAX. [Source](https://www.w3schools.com/jquery/jquery_intro.asp)
 -   **jQuery UI**
     -   A collection of graphical user interfaces (GUIs) for interactions, effects, widgets and themes implemented with jQuery JavaScript library. [Source](https://jqueryui.com/)
 -   **Select2**
@@ -352,6 +377,8 @@ Given the technologies the web app is assumed to be using (according to the reso
 
 Since Gumtree web app uses Wordpress as one of its content management systems that typically relies on MySQL or MariaDB as its database, it is safe to assume that the web app uses Relational DataBase to structure its data. This finding would mean that every category that the application offers essentially represents a database table among others like users, blogs, and many more. Retrieving data, or querying, would be more structured, accurate and secured as each table’s rows and columns represents relationships.
 
+##### [Resource](https://www.php.net/)
+
 ### e. Identify entities which must be tracked by the app
 
 Below are the significant and essential entities that is believed to be tracked by the app to operate:
@@ -378,16 +405,17 @@ The listed entities above is an overview and assumption of how the web applicati
 
 ## f. Identify the relationships and associations between the entities you have identified in part (e)
 
-| User              | Message         | Listing                 | Category                        | Sub Category        | Location        | State            | Region           | Area              | Suburb                             |
+The table below is the assumed relationsips and associations between the entities based on research, author's understanding and available resources.
+| User | Message | Listing | Category | Sub Category | Location | State | Region | Area | Suburb |
 | ----------------- | --------------- | ----------------------- | ------------------------------- | ------------------- | --------------- | ---------------- | ---------------- | ----------------- | ---------------------------------- |
-| has many messages | belongs to user | belongs to user         | has many sub categories         | belongs to category | no associations | has many regions | belongs to state | belongs to region | belongs to area                    |
-| has many listings |                 | belongs to sub category | has and belongs to many suburbs | has many listings   |                 |                  | has many areas   | has many suburbs  | has and belongs to many categories |
-| belongs to suburb |                 | belongs to suburb       |                                 |                     |                 |                  |                  |                   | has many listings                  |
-|                   |                 |                         |                                 |                     |                 |                  |                  |                   | has many users                     |
+| has many messages | belongs to user | belongs to user | has many sub categories | belongs to category | no associations | has many regions | belongs to state | belongs to region | belongs to area |
+| has many listings | | belongs to sub category | has and belongs to many suburbs | has many listings | | | has many areas | has many suburbs | has and belongs to many categories |
+| belongs to suburb | | belongs to suburb | | | | | | | has many listings |
+| | | | | | | | | | has many users |
 
 ## g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
-Below is the assumed visual representation presented in an ERD of the web app schema and their associations.
+Below is the visual representation presented in an ERD of the web app schema and their associations based on the research, author's understanding, and available resources.
 
 ![Gumtree Assumed ERD](erd.png)
 [Link](https://dbdiagram.io/d/5f0ff2f174ca2227330d6ad2)
