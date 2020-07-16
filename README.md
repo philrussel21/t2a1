@@ -1,5 +1,4 @@
 **Author:** [Phil Antiporda](https://github.com/philrussel21)
-[Link to Repo](https://github.com/philrussel21/t2a1)
 
 # Table of Contents
 
@@ -26,6 +25,8 @@
     - [ERD schema](https://github.com/philrussel21/t2a1#g-design-a-schema-using-an-entity-relationship-diagram-erd-appropriate-for-the-database-of-this-website-assuming-a-relational-database-model)
 
 # T2A1 - Workbook Term 2
+
+[Link to Repo](https://github.com/philrussel21/t2a1)
 
 ## Q1 Describe the architecture of a typical Rails application.
 
@@ -454,4 +455,4 @@ The table below is the assumed relationsips and associations between the entitie
 Below is the visual representation presented in an ERD of the web app schema and their associations based on the research, author's understanding, and available resources.
 
 ![Gumtree Assumed ERD](erd.png)
-[Link](https://dbdiagram.io/d/5f0ff2f174ca2227330d6ad2)
+[Link to dbdiagram.io illustration](https://dbdiagram.io/d/5f0ff2f174ca2227330d6ad2)
